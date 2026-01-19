@@ -1,5 +1,5 @@
 name: Frontend CI
-
+ 
 on:
   pull_request:
     paths:
@@ -31,10 +31,6 @@ jobs:
 
       - name: Install
         run: npm ci
-
-      - name: Lint (optional)
-        run: npm run lint
-        continue-on-error: true
 
       - name: Build
         run: npm run build
